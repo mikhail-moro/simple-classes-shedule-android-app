@@ -24,10 +24,16 @@ User can change month of the month schedule and day of the daily schedule with r
 In this moment app uses domein http://mikhailmoro.pythonanywhere.com/ to get data of classes, but it can be changed in 
 simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule/Request.kt
 ```Kotlin
-  private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
+  class Request {
+      companion object {
+          private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
+      }
+      
+      ...
+  }
 ```
 
-**But, without the code changing Json in body of response shoud have this structure:**
+**But without the code changing, .json in body of response shoud have this structure:**
 ```
 {
     ...
@@ -55,3 +61,10 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
     ...
 }
 ```
+
+## In the next builds:
+  + At the moment, many texts and colors are hardcoded, this is incorrect and it's will be changed in next builds.
+  + Loading animations will be added.
+  + Preferences (as theme changing) will be added.
+  + App icon wiil be changed.
+  + Login activity will be added. 
