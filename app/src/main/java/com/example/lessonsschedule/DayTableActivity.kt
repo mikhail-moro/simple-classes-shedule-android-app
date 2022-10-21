@@ -20,15 +20,20 @@ import java.time.LocalDate
 class DayTableActivity : AppCompatActivity() {
     private val origDisplayWidth = Resources.getSystem().displayMetrics.widthPixels // Width of phone display (need for correct animations)
 
-    private val recycler: RecyclerView = findViewById(R.id.recycle)
-    private val headerText: TextView = findViewById(R.id.header_text)
-    private val toMonthTableButton: ImageButton = findViewById(R.id.button)
-    private val preferencesButton: ImageButton = findViewById(R.id.preferences_button)
+    private lateinit var recycler: RecyclerView
+    private lateinit var headerText: TextView
+    private lateinit var toMonthTableButton: ImageButton
+    private lateinit var preferencesButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(R.layout.activity_day_table)
+
+        recycler = findViewById(R.id.recycler)
+        headerText = findViewById(R.id.header_text)
+        toMonthTableButton = findViewById(R.id.button)
+        preferencesButton = findViewById(R.id.preferences_button)
 
         toMonthTableButton.setOnClickListener {
             val intent = Intent(this@DayTableActivity, MonthTableActivity::class.java)

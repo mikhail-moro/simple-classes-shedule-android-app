@@ -9,14 +9,17 @@ import java.time.LocalDate
 
 
 class Request {
+    companion object {
+        // It`s test server that fills cells with a nonexistent schedule
+        private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
+    }
+
     // Sends GET-request and execute code from changeTable arg with data from response
     @OptIn(DelicateCoroutinesApi::class)
     fun getData(startDate: LocalDate, endDate: LocalDate, changeTable:(data: String) -> Unit) {
         GlobalScope.launch(Dispatchers.IO) {
             try {
-                val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
-                
-                val url = URL("${SERVER_URL}?start_time=${reformatDate(startDate)}T00:00:00&end_time=${reformatDate(endDate)}T23:59:59")
+                val url = URL("${Companion.SERVER_URL}?start_time=${reformatDate(startDate)}T00:00:00&end_time=${reformatDate(endDate)}T23:59:59")
 
                 val inputStream: InputStream
                 val conn = url.openConnection() as HttpURLConnection

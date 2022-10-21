@@ -60,9 +60,9 @@ private fun TableLayout.setChangeCellsAnimations(arg: Boolean) {
     for(rowCount in 0 until 6) {
         val row: LinearLayout = this.getChildAt(rowCount) as LinearLayout
 
-        for(itemCount in 0 until 6) {
-            val item: LinearLayout = row.getChildAt(itemCount) as LinearLayout
-            val frame: FrameLayout = item.getChildAt(1) as FrameLayout
+        for(cellCount in 0 until 6) {
+            val cell: LinearLayout = row.getChildAt(cellCount) as LinearLayout
+            val frame: FrameLayout = cell.getChildAt(1) as FrameLayout
 
             val meetingsBox: LinearLayout = frame.getChildAt(0) as LinearLayout
             val meetingsMarks: LinearLayout = frame.getChildAt(1) as LinearLayout
@@ -123,10 +123,10 @@ private inline fun TableLayout.tableCellsIterator(calendar: List<CalendarItem>, 
     for(rowCount in 0 until 6) {
         val row: LinearLayout = this.getChildAt(rowCount) as LinearLayout
 
-        for(itemCount in 0 until 6) {
-            val item: LinearLayout = row.getChildAt(itemCount) as LinearLayout
+        for(cellCount in 0 until 6) {
+            val cell: LinearLayout = row.getChildAt(cellCount) as LinearLayout
 
-            changeGridItems(item, calendar[count])
+            changeGridItems(cell, calendar[count])
 
             count++
         }
@@ -138,9 +138,9 @@ private fun TableLayout.clearTable() {
     for(rowCount in 0 until 6) {
         val row: LinearLayout = this.getChildAt(rowCount) as LinearLayout
 
-        for (itemCount in 0 until 6) {
-            val item: LinearLayout = row.getChildAt(itemCount) as LinearLayout
-            val frame: FrameLayout = item.getChildAt(1) as FrameLayout
+        for (cellCount in 0 until 6) {
+            val cell: LinearLayout = row.getChildAt(cellCount) as LinearLayout
+            val frame: FrameLayout = cell.getChildAt(1) as FrameLayout
 
             val meetingsBox: LinearLayout = frame.getChildAt(0) as LinearLayout
 
@@ -169,13 +169,13 @@ private fun TableLayout.setCellsColor(calendar: List<CalendarItem>) {
     var count = 0
     for(rowCount in 0 until 6) {
         val row: LinearLayout = this.getChildAt(rowCount) as LinearLayout
-        for (itemCount in 0 until 6) {
-            val item: LinearLayout = row.getChildAt(itemCount) as LinearLayout
+        for (cellCount in 0 until 6) {
+            val cell: LinearLayout = row.getChildAt(cellCount) as LinearLayout
 
             if (calendar[count].status) {
-                item.setBackgroundResource(R.drawable.month_item_current_month)
+                cell.setBackgroundResource(R.drawable.month_item_current_month)
             } else {
-                item.setBackgroundResource(R.drawable.month_item_wrong_month)
+                cell.setBackgroundResource(R.drawable.month_item_wrong_month)
             }
 
             count++
