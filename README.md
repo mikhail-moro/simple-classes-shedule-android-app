@@ -7,7 +7,7 @@
 
 [<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg" width="240" />](https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg)
 
-<sub>Month schedule with list of daily classes</sub>
+<sub>Month schedule with list of day classes</sub>
 
 [<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule_with_raised_bottom_list.jpg" width="240" />](https://github.com/mikhail-moro/res/blob/main/month_schedule_with_raised_bottom_list.jpg)
 
