@@ -1,6 +1,6 @@
 # simple-classes-shedule-android-app
 
-Simple android app that can display user month and daily schedule of classes.
+## Simple android app that can display user month and daily schedule of classes.
 
 
 <sub>Month schedule</sub>
@@ -16,4 +16,15 @@ Simple android app that can display user month and daily schedule of classes.
 [<img src="https://github.com/mikhail-moro/res/blob/main/daily_schedule.jpg" width="240" />](https://github.com/mikhail-moro/res/blob/main/daily_schedule.jpg)
 
 
-User can change month of the month schedule and day of the daily schedule with right\left swipe. 
+User can change month of the month schedule and day of the daily schedule with right\left swipe.
+
+
+## Backend
+
+In this moment app uses domein http://mikhailmoro.pythonanywhere.com/ to get data of classes, but it can be changed in 
+simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule/Request.kt
+
+Kotlin
+```
+  private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
+```
