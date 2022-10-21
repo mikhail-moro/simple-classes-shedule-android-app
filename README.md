@@ -3,5 +3,6 @@
 Simple android app that can display user month and daily schedule of classes
 
 Month schedule
-[<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg" width="100" />](./link/to/sql/file)
+
+[<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg" width="200" />](./link/to/sql/file)
 
