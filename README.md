@@ -63,8 +63,8 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
 ```
 
 ## In the next builds:
-  + At the moment, many texts and colors are hardcoded, this is incorrect and it's will be changed in next builds.
-  + Loading animations will be added.
-  + Preferences (as theme changing) will be added.
-  + App icon wiil be changed.
-  + Login activity will be added. 
+  + At the moment, many texts and colors are hardcoded, this is incorrect and it's will be changed in next builds
+  + Loading animations will be added
+  + Preferences (as theme changing) will be added
+  + App icon wiil be changed
+  + Login activity will be added 
