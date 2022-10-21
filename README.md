@@ -20,7 +20,7 @@ User can change month of the month schedule and day of the day schedule with rig
 
 ## Requirements
 
-Minimum Android version: Android Oreo (2017) (API Level 26)
+Minimum Android version: Android 8 Oreo 2017 (API Level 26)
 
 
 ## Backend
@@ -72,4 +72,4 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
   + Preferences (as theme changing) will be added
   + App icon wiil be changed
   + Login activity will be added
-  * Visual bugs for devices with a small screen will be fixed
+  + Visual bugs for devices with a small screen will be fixed
