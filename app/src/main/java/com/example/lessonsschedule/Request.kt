@@ -14,7 +14,9 @@ class Request {
     fun getData(startDate: LocalDate, endDate: LocalDate, changeTable:(data: String) -> Unit) {
         GlobalScope.launch(Dispatchers.IO) {
             try {
-                val url = URL("https://mikhailmoro.pythonanywhere.com/?start_time=${reformatDate(startDate)}T00:00:00&end_time=${reformatDate(endDate)}T23:59:59")
+                val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
+                
+                val url = URL("${SERVER_URL}?start_time=${reformatDate(startDate)}T00:00:00&end_time=${reformatDate(endDate)}T23:59:59")
 
                 val inputStream: InputStream
                 val conn = url.openConnection() as HttpURLConnection
