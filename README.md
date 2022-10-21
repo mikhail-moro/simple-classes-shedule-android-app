@@ -27,31 +27,31 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
   private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
 ```
 
-But body of response shoud have this structure:
-```Json
+**But, without the code changing Json in body of response shoud have this structure:**
+```
 {
-  ...
-  
-  "yyyy-mm-dd": [
-    ...,
-    
-    {
-      "module": ...,
-      "name": " ...,
-      "theme": ...,
-      "type": ...,
-      "aud": ...,
-      "link": ...,
-      "teachers": ...,
-      "groups": ...,
-      "startTime": ...,
-      "endTime": ...,
-      "color": ...,
-    },
-    
     ...
-  ]
   
-  ...
+        "yyyy-mm-dd": [
+            ...,
+    
+            {
+                "module": ...,
+                "name": ...,
+                "theme": ...,
+                "type": ...,
+                "aud": ...,
+                "link": ...,
+                "teachers": ...,
+                "groups": ...,
+                "startTime": ...,
+                "endTime": ...,
+                "color": ...,
+            },
+    
+            ...
+        ]
+  
+    ...
 }
 ```
