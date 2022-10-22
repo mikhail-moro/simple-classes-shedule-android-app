@@ -40,7 +40,7 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
 **But without the code changing, .json in body of response shoud have this structure:**
 ```
 {
-    ...
+    ...,
   
         "yyyy-mm-dd": [
             ...,
