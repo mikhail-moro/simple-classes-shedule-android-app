@@ -42,25 +42,25 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
 {
     ...,
   
-        "yyyy-mm-dd": [
-            ...,
+    "yyyy-mm-dd": [
+        ...,
     
-            {
-                "module": ...,
-                "name": ...,
-                "theme": ...,
-                "type": ...,
-                "aud": ...,
-                "link": ...,
-                "teachers": ...,
-                "groups": ...,
-                "startTime": ...,
-                "endTime": ...,
-                "color": ...,
-            },
+        {
+            "module": ...,
+            "name": ...,
+            "theme": ...,
+            "type": ...,
+            "aud": ...,
+            "link": ...,
+            "teachers": ...,
+            "groups": ...,
+            "startTime": ...,
+            "endTime": ...,
+            "color": ...,
+        },
     
-            ...
-        ],
+        ...
+    ],
   
     ...
 }
