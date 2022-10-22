@@ -60,7 +60,7 @@ simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule
             },
     
             ...
-        ]
+        ],
   
     ...
 }
