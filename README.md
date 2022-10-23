@@ -25,7 +25,7 @@ Minimum Android version: Android 8 Oreo 2017 (API Level 26)
 
 ## Backend
 
-In this moment app uses domein http://mikhailmoro.pythonanywhere.com/ to get data of classes, but it can be changed in 
+In this moment app uses domein http://mikhailmoro.pythonanywhere.com/ (https://github.com/mikhail-moro/simple-flask-py-server) to get data of classes, but it can be changed in 
 simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule/Request.kt
 ```Kotlin
   class Request {
