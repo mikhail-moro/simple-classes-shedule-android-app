@@ -6,9 +6,6 @@
 
 [<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg" width="240" />](https://github.com/mikhail-moro/res/blob/main/month_schedule.jpg)
 
-<sub>Month schedule with list of day classes</sub>
-
-[<img src="https://github.com/mikhail-moro/res/blob/main/month_schedule_with_raised_bottom_list.jpg" width="240" />](https://github.com/mikhail-moro/res/blob/main/month_schedule_with_raised_bottom_list.jpg)
 
 <sub>Day schedule</sub>
 
@@ -23,53 +20,5 @@ User can change month of the month schedule and day of the day schedule with rig
 Minimum Android version: Android 8 Oreo 2017 (API Level 26)
 
 
-## Backend
-
-In this moment app uses domein http://mikhailmoro.pythonanywhere.com/ (https://github.com/mikhail-moro/simple-flask-py-server) to get data of classes, but it can be changed in 
-simple-classes-shedule-android-app/app/src/main/java/com/example/lessonsschedule/Request.kt
-```Kotlin
-  class Request {
-      companion object {
-          private const val SERVER_URL = "https://mikhailmoro.pythonanywhere.com/"
-      }
-      
-      ...
-  }
-```
-
-**But without the code changing, .json in body of response shoud have this structure:**
-```
-{
-    ...,
-  
-    "yyyy-mm-dd": [
-        ...,
-    
-        {
-            "module": ...,
-            "name": ...,
-            "theme": ...,
-            "type": ...,
-            "aud": ...,
-            "link": ...,
-            "teachers": ...,
-            "groups": ...,
-            "startTime": ...,
-            "endTime": ...,
-            "color": ...,
-        },
-    
-        ...
-    ],
-  
-    ...
-}
-```
-
 ## In the next builds:
-  + At the moment, many texts and colors are hardcoded, this is incorrect and it's will be changed in next builds
-  + Loading animations will be added
-  + Preferences (as theme changing) will be added
-  + App icon wiil be changed
-  + Login activity will be added
   + Visual bugs for devices with a small screen will be fixed
