@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <include layout="@layout/month_grid_item_meeting_1" />
+        <include layout="@layout/month_grid_item_meeting_1" />
+        <include layout="@layout/month_grid_item_meeting_1" />
+        <include layout="@layout/month_grid_item_meeting_2" />
+    </LinearLayout>
+</LinearLayout>

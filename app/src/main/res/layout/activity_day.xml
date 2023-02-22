@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DayActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -32,13 +33,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/to_month_table"
-                android:background="@null"/>
+                android:background="@null"
+                tools:ignore="ContentDescription,NestedWeights" />
 
             <TextView
                 android:layout_marginStart="7dp"
                 android:id="@+id/header_text"
                 android:gravity="center"
-                android:text="Понедельник, 1 января"
                 android:textColor="@color/black"
                 android:textSize="19sp"
                 android:layout_width="0dp"
@@ -54,7 +55,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/to_preferences"
-                android:background="@null"/>
+                android:background="@null"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
         <FrameLayout
@@ -69,7 +71,8 @@
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:alpha="0"
-                android:maxHeight="0.8dp" />
+                android:maxHeight="0.8dp"
+                tools:ignore="ContentDescription" />
         </FrameLayout>
     </LinearLayout>
 
@@ -87,7 +90,9 @@
             android:textColor="#646987"
             android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:text="@string/no_meetings"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"

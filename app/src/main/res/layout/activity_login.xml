@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:id="@+id/fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/login_animation_container"
+        app:layout_constraintLeft_toLeftOf="@+id/container"
+        app:layout_constraintRight_toRightOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/container"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Почта"
+            android:textColor="@color/black"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Пароль"
+            android:textColor="@color/black"
+            android:hint="Пароль"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:selectAllOnFocus="true" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить мои данные"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/login_animation_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fields"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintRight_toRightOf="@+id/container"
+        app:layout_constraintLeft_toLeftOf="@+id/container">
+
+        <ImageView
+            android:id="@+id/login_animation_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/login_animation_item"
+            android:alpha="0"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/login_animation_container"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintRight_toRightOf="@+id/container"
+        app:layout_constraintLeft_toLeftOf="@+id/container" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        app:layout_constraintBottom_toBottomOf="@+id/container"
+        app:layout_constraintRight_toRightOf="@+id/container"
+        app:layout_constraintLeft_toLeftOf="@+id/container" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

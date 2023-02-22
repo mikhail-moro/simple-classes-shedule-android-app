@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Karasik\'s DonSTU Schedule</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="day_1">ПН</string>
+    <string name="day_2">ВТ</string>
+    <string name="day_3">СР</string>
+    <string name="day_4">ЧТ</string>
+    <string name="day_5">ПТ</string>
+    <string name="day_6">СБ</string>
+    <string name="no_meetings">Нет пар</string>
+    <string name="preferences_header_text">Настройки</string>
+    <string name="reset_user_data">Сбросить почту и пароль</string>
+    <string name="enable_notification_info">Уведомления с парами доступны только при автоматическом входе</string>
+    <string name="enable_notification">Разрешить уведомления</string>
+    <string name="token_is_not_available">Срок действия токена истёк, пожалуйста войдите ещё раз</string>
+    <string name="next_auth_will_be">Следующая авторизация будет</string>
+    <string name="write_mail_and_password">Введите почту и пароль</string>
+    <string name="wrong_mail_or_password">Неправильная почта или пароль</string>
+    <string name="server_error">Ошибка сервера</string>
+    <string name="try_again">Попробовать ещё раз</string>
+    <string name="need_reboot">Изменения вступят в силу при перезагрузке приложения</string>
+    <string name="notification_period">Период обновления уведомлений в часах</string>
+    <string name="notification_action_next">СЛЕД</string>
+    <string name="notification_action_prev">ПРЕД</string>
+    <string name="notification_action_stop">Убрать уведомление</string>
+    <string name="no_meetings_notification">Сегодня нет пар</string>
 </resources>
