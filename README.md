@@ -21,4 +21,7 @@ Minimum Android version: Android 8 Oreo 2017 (API Level 26)
 
 
 ## In the next builds:
-  + Visual bugs for devices with a small screen will be fixed
+  + Visual bugs for devices with a small screen will be fixed.
+  + Notification bugs will be fixed, notification type selection will be added.
+  + The correct auto-authorization will be added.
+  + Selection of color themes will be added.
